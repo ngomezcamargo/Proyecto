@@ -1,3 +1,5 @@
+import Header from "./Header"
+import { Link } from "react-router-dom";
 
 const callouts = [
     {
@@ -46,6 +48,8 @@ const callouts = [
 
 export default function Example() {
     return (
+        <>
+        <Header/>
         <div className="bg-gray-100">
             <div className="max-w-7x7 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-3x6 py-16 sm:py-24 lg:max-w-none lg:py-32">
@@ -74,5 +78,7 @@ export default function Example() {
                 </div>
             </div>
         </div>
+        <Link to='/comida-rápida'></Link>
+        </>
     )
 }
